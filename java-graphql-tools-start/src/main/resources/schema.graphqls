@@ -1,0 +1,27 @@
+schema {
+    query: RootQuery
+    mutation: RootMutation
+}
+
+type RootQuery {
+	 OrgUnit(id: ID): OrgUnit
+     OrgUnits: [OrgUnit]!
+     Persons: [Person]!
+}
+
+type RootMutation {
+	 create(id: ID, name: String): OrgUnit
+}
+
+
+type OrgUnit {
+    id: ID!
+    name: String!
+    members: [Person]! 
+}
+
+type Person {
+	 id: ID!
+	 name: String!
+	 #belongsTo: OrgUnit 
+}
