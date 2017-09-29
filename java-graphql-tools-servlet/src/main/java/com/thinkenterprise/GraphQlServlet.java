@@ -42,14 +42,17 @@ import graphql.servlet.SimpleGraphQLServlet;
 /**
  * GraphQl Servlet which provide the GraphQl Query Language over Http   
  * 
- * A possible call is http://localhost:8080/graphql?query={text} 
+ * The gernal call syntax i http://localhost:8080/graphql?query={text} 
+ * A possibel can be http://localhost:8080/graphql?query=query {OrgUnits{name}}
+ * 
+ * Before, start the Servlet Container over mvn with the jetty Plugin mvn jetty:run
  * 
  * @author Michael Schäfer 
  * 
  * */
 
 
-@WebServlet(urlPatterns="/graphql")
+@WebServlet(urlPatterns="/grapshql")
 public class GraphQlServlet extends SimpleGraphQLServlet {
 	
 	private static final long serialVersionUID = 1L;
