@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Thinkenterprise
+ * Copyright (C) 2016 Thinkenterprise
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,27 +18,16 @@
  * @author Michael Schaefer
  */
 
-
-
 package com.thinkenterprise;
 
-import com.thinkenterprise.domain.OrgUnitRepository;
-import com.thinkenterprise.domain.PersonRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public class Application {
-	
+@SpringBootApplication
+public class GraphQlSpringBootApplication {
 	
 	public static void main(String[] args) {
-		
-		// Create Data Repositories 
-		OrgUnitRepository orgUnitRepository = new OrgUnitRepository();
-		PersonRepository personRepository = new PersonRepository();
-		
-		
-		
-	
-		
-		 
+		SpringApplication.run(GraphQlSpringBootApplication.class, args);
 	}
 
 }

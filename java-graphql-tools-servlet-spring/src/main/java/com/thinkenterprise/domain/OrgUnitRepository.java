@@ -19,26 +19,15 @@
  */
 
 
+package com.thinkenterprise.domain;
 
-package com.thinkenterprise;
+import org.springframework.data.repository.CrudRepository;
 
-import com.thinkenterprise.domain.OrgUnitRepository;
-import com.thinkenterprise.domain.PersonRepository;
 
-public class Application {
+public interface OrgUnitRepository extends CrudRepository<OrgUnit, Long>{
 	
 	
-	public static void main(String[] args) {
-		
-		// Create Data Repositories 
-		OrgUnitRepository orgUnitRepository = new OrgUnitRepository();
-		PersonRepository personRepository = new PersonRepository();
-		
-		
-		
+	OrgUnit findByName(String name);
 	
-		
-		 
-	}
-
+	
 }

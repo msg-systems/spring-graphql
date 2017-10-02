@@ -17,28 +17,13 @@
  *
  * @author Michael Schaefer
  */
+package com.thinkenterprise.domain;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface PersonRepository extends CrudRepository<Person, Long>{
 
 
-
-package com.thinkenterprise;
-
-import com.thinkenterprise.domain.OrgUnitRepository;
-import com.thinkenterprise.domain.PersonRepository;
-
-public class Application {
 	
-	
-	public static void main(String[] args) {
-		
-		// Create Data Repositories 
-		OrgUnitRepository orgUnitRepository = new OrgUnitRepository();
-		PersonRepository personRepository = new PersonRepository();
-		
-		
-		
-	
-		
-		 
-	}
-
+    
 }
