@@ -28,11 +28,7 @@ import graphql.GraphQL;
 public class GraphQlUtil {
 	
 	
-	/**
-	 * Execute an GraphQL Query 
-	 * 
-	 * @author Michael Schäfer
-	 * */
+
 	public static void executeGraphQlQuery(GraphQL graphql, String query, boolean response ) {
 		
 		ExecutionInput executionInput = ExecutionInput.newExecutionInput().query(query).build();
