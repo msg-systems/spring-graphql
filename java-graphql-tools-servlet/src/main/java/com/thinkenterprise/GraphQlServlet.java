@@ -59,7 +59,7 @@ public class GraphQlServlet extends SimpleGraphQLServlet {
 	
 	
 	/**
-	 * Servlet Standard Constructor which will be called if the servlet loaded first time  
+	 * Servlet Standard Constructor which will be called if the Servlet loaded first time  
 	 * 
 	 * 
 	 * @author Michael Schäfer 

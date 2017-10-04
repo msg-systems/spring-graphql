@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Graphql Java Servlet</name>
+	<name>GraphQL Java Servlet</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -46,9 +46,8 @@
 		</dependency>
 
 	</dependencies>
+	
 	<build>
-       
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

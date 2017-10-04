@@ -35,11 +35,7 @@ import graphql.schema.GraphQLSchema;
 public class GraphQlUtil {
 	
 	
-	/**
-	 * Execute an GraphQL Query 
-	 * 
-	 * @author Michael Schäfer
-	 * */
+	
 	public static void executeGraphQlQuery(GraphQL graphql, String query, boolean response ) {
 		
 		ExecutionInput executionInput = ExecutionInput.newExecutionInput().query(query).build();
@@ -59,11 +55,7 @@ public class GraphQlUtil {
 		
 	}
 	
-	/**
-	 * Execute an GraphQL Query 
-	 * 
-	 * @author Michael Schäfer
-	 * */
+	
 	public static GraphQLSchema createExecutableSchema() {
 		// Create Data Repositories 
 		OrgUnitRepository orgUnitRepository = new OrgUnitRepository();
